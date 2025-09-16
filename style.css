@@ -87,7 +87,7 @@ main section p {
   margin-top: 20px;
   box-shadow: #f03f3f7c 5px 5px 5px 5px, rgba(0, 0, 0, 0.1) 0px 6px 20px 0px;
 }
-main section ul {
+.instrument-list {
   list-style-type: disc;
   padding-left: 20px;
   text-align: left;
@@ -97,16 +97,16 @@ main section ul {
   justify-content: space-between;
 }
 
-main section ul li {
+.instrument-list li {
   transition: transform 0.5s; /* Added transition to the default state */
 }
 
-main section ul li:hover {
+.instrument-list li:hover {
   transform: scale(1.15);
   transition: transform 0.5s;
 }
 
-main section ul li a {
+.instrument-list-link a {
   color: white;
   text-decoration: none;
   margin-top: 10px;
@@ -213,4 +213,67 @@ footer {
 
 .about-main-img img {
   width: 70%;
+}
+
+/*! DAVULLAR */
+.davul-list-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+}
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  display: flex;
+  flex: 1;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  flex: 1;
+}
+
+.product-list img {
+  flex: 1;
+  width: 200px;
+  transform: scale(1); /* Added default scale */
+  transition: transform 0.5s; /* Added transition to parent */
+}
+.product-list p {
+  text-align: left;
+  padding-left: 20px;
+  font-family: "Merriweather", serif;
+  font-size: 10px;
+}
+
+.product-list img:hover {
+  transform: scale(1.12); /* Changed to scale down */
+  transition: transform 0.5s;
+}
+
+.product-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: center;
+}
+.product-list div {
+  flex: 1;
+  width: 200px;
+  transform: scale(1); /* Added default scale */
+}
+.product-list hr {
+  border: none;
+  border-top: 1px solid #f70505;
+  margin: 10px 0;
+  height: 10px;
 }
